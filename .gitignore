@@ -1,0 +1,32 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# secrets / private research data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+secrets/
+private-data/
+*.sqlite
+*.db
+# Node / Expo
+node_modules/
+.expo/
+dist/
+build/
+coverage/
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+# logs/media/uploads
+*.log
+uploads/
+temp-media/

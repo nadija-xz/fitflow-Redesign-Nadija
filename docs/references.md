@@ -1,0 +1,25 @@
+# Sources (consulted 2026-09-16)
+
+- [S1] IT3060 FitFlow Redesign Case Study (course-provided PDF): CourseWeb case study; supplied in this conversation.
+- [S2] IT3060 Lab Exercise 05 (course-provided PDF): CourseWeb lab sheet; supplied in this conversation.
+- [S3] IT3060 Lab Exercise 01 research (student-provided PDF): Five coded participants P1-P5; student-provided report.
+- [S4] IT3060 Lab Exercise 04 usability report (student-provided PDF): P01-P10 records are labelled simulated in that report.
+- [R1] Expo: Develop websites with Expo: https://docs.expo.dev/workflow/web/
+- [R2] Expo: React Native New Architecture: https://docs.expo.dev/guides/new-architecture/
+- [R3] Flutter: Web support: https://docs.flutter.dev/platform-integration/web
+- [R4] Kotlin Multiplatform: Supported platforms: https://kotlinlang.org/docs/multiplatform/supported-platforms.html
+- [R5] Apple Developer: SwiftUI apps: https://developer.apple.com/documentation/technologyoverviews/swiftui
+- [R6] NestJS: WebSocket gateways: https://docs.nestjs.com/websockets/gateways
+- [R7] FastAPI: Concurrency and async / await: https://fastapi.tiangolo.com/async/
+- [R8] Firebase: Cloud Firestore capabilities: https://firebase.google.com/docs/firestore
+- [R9] PostgreSQL: Row Security Policies: https://www.postgresql.org/docs/17/ddl-rowsecurity.html
+- [R10] PostgreSQL: JSON data types and indexes: https://www.postgresql.org/docs/16/datatype-json.html
+- [R11] AWS: HIPAA compliance and eligible services: https://aws.amazon.com/compliance/hipaa-compliance/
+- [R12] AWS: What is Amazon Cognito?: https://docs.aws.amazon.com/cognito/latest/developerguide/what-is-amazon-cognito.html
+- [R13] Supabase: HIPAA compliance and customer responsibilities: https://supabase.com/docs/guides/security/hipaa-compliance
+- [R14] MongoDB Atlas: HIPAA compliance and shared responsibility: https://www.mongodb.com/docs/atlas/architecture/current/compliance/hipaa/
+- [R15] GitHub: Creating a new repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository
+- [R16] GitHub: Managing protected branches: https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches
+- [R17] GitHub CLI: gh repo create: https://cli.github.com/manual/gh_repo_create
+- [R18] Google Cloud: HIPAA compliance and BAA scope: https://cloud.google.com/security/compliance/hipaa-compliance
+- [R19] MongoDB: HIPAA compliance and BAA does not ensure compliance: https://www.mongodb.com/products/platform/trust/hipaa

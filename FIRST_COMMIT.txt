@@ -1,0 +1,2 @@
+Local initial commit: 4284497c2d5be276ff20ecbc82f750f3cf3e3d3d
+This proves a local commit only; no GitHub remote/push is claimed.

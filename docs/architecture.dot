@@ -1,0 +1,44 @@
+digraph FitFlow {
+ graph [rankdir=TB, bgcolor="white", pad="0.22", nodesep="0.40", ranksep="0.60", splines=polyline, fontname="DejaVu Sans", fontsize=10];
+ node [shape=box, style="rounded,filled", fillcolor="#EDF4F7", color="#A4BEC7", penwidth=1.2, fontname="DejaVu Sans", fontsize=10, margin="0.16,0.12"];
+ edge [fontname="DejaVu Sans", fontsize=8, color="#6E8793", arrowsize=0.65];
+ mobile [label="Mobile apps\nReact Native + Expo\niOS / Android", fillcolor="#E0F2EC"];
+ web [label="Web app\nExpo Web / React", fillcolor="#E0F2EC"];
+ auth [label="Identity provider\nAmazon Cognito\nOIDC / JWT", fillcolor="#F0E9F9"];
+ api [label="API gateway + application\nNestJS / Node.js\nJWT validation + RBAC", fillcolor="#DCEBF9"];
+ planning [label="Workout + progress\nmodules"];
+ social [label="Community + privacy\nmodules"];
+ nutrition [label="Nutrition + media\nmodules"];
+ events [label="Real-time events\nSocket.IO / WebSockets", fillcolor="#FFF1D9"];
+ redis [label="Managed Redis\ncache / rate limits", fillcolor="#FFF1D9"];
+ db [label="Managed PostgreSQL\nprivate profiles / plans\nmeals / groups / audit", fillcolor="#E8ECFE"];
+ store [label="Private object storage\nmeal photos (TTL) / media", fillcolor="#E8ECFE"];
+ ai [label="AI service\nPython + FastAPI\nmodel validation / inference", fillcolor="#FFE9E6"];
+ device [label="Optional on-device ML\nTensorFlow Lite", fillcolor="#FFE9E6"];
+ observe [label="Observability + security\nredacted logs / alerts / backups", fillcolor="#F0F3F4"];
+ {rank=same; mobile; web}
+ {rank=same; planning; social; nutrition}
+ {rank=same; db; redis; store}
+ mobile -> api [label=" HTTPS / TLS "];
+ web -> api [label=" HTTPS / TLS "];
+ mobile -> auth [label=" sign in "];
+ web -> auth;
+ auth -> api [label=" signed tokens "];
+ api -> planning;
+ api -> social;
+ api -> nutrition;
+ planning -> db [label=" private read/write "];
+ social -> db;
+ nutrition -> db;
+ social -> events [label=" consent-filtered "];
+ events -> mobile [label=" scoped updates ",constraint=false];
+ events -> web [constraint=false];
+ api -> redis [label=" limited TTL "];
+ nutrition -> store [label=" short-lived upload "];
+ planning -> ai [label=" minimal features "];
+ nutrition -> ai [label=" image / crop "];
+ ai -> api [label=" draft inference ", constraint=false];
+ mobile -> device [label=" optional local inference ",constraint=false];
+ api -> observe [label=" redacted events "];
+ ai -> observe [constraint=false];
+}

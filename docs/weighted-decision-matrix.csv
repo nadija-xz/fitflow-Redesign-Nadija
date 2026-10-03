@@ -1,0 +1,7 @@
+Criteria,Security / privacy readiness,Runtime performance,Development speed,Scalability,AI / ML fit,Real-time features,Maintainability,Lifecycle cost
+Weight (%),20,15,13,12,12,10,10,8
+Candidate,Security / privacy readiness,Runtime performance,Development speed,Scalability,AI / ML fit,Real-time features,Maintainability,Lifecycle cost,Weighted Score (1-5),Score Index (0-100)
+A - React Native + NestJS + PostgreSQL + Cognito + FastAPI,4,4,5,4,5,5,4,4,4.35,87.0
+B - Flutter + FastAPI + MongoDB + Auth0,3,5,4,4,4,3,3,3,3.67,73.4
+C - Kotlin MP + Go + DynamoDB + Cognito,4,5,2,5,3,4,3,3,3.71,74.2
+D - Separate native apps + Express + Firestore + Firebase Auth,3,5,2,4,3,5,2,2,3.31,66.2

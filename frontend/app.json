@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "FitFlow",
+    "slug": "fitflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#000000",
+        "foregroundImage": "./assets/icon.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.fitflow.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "43344af9-4693-41e3-8c12-42a355e9083f"
+      }
+    },
+    "plugins": [
+      "expo-secure-store",
+      ["expo-image-picker", {
+        "cameraPermission": "Allow FitFlow to photograph your meal for review.",
+        "photosPermission": "Allow FitFlow to select a meal photo for review.",
+        "microphonePermission": false
+      }]
+    ]
+  }
+}

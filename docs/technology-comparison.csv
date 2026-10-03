@@ -1,0 +1,16 @@
+Category,Candidate,Strengths,Tradeoffs,Source
+Frontend,React Native + Expo,Shared iOS Android and web; TypeScript,Native modules need platform review,R1;R2
+Frontend,Flutter,Compiled UI; web deployment,Dart ramp-up and web semantics review,R3
+Frontend,Kotlin Multiplatform,Shared logic; native access,Compose web beta at evaluation,R4
+Frontend,Swift/SwiftUI,Apple-native integration,No direct Android/web target,R5
+Backend,NestJS / Node.js,Modules; WebSocket gateway,Inference isolated from event loop,R6
+Backend,FastAPI / Python,ML integration and async APIs,Second stack for main API,R7
+Backend,Go,Concurrency; compiled runtime,New language and ML coordination,Design judgment
+Database,PostgreSQL,"Relational integrity, JSONB, optional RLS",Separate realtime layer,R9;R10
+Database,MongoDB Atlas,Flexible documents; BAA pathway,Schema and cost trade-offs,R14
+Database,Firestore,Realtime listeners and offline cache,Document query/cost and eligibility review,R8;R18
+Database,DynamoDB,Managed scale for modeled access paths,Ad hoc joins need redesign,R11
+Auth,Amazon Cognito,OIDC/JWT; AWS integration,API RBAC still needed,R12
+Auth,Firebase Auth,Rapid app login,Product-specific compliance verification,R8;R18
+Auth,Auth0,Flexible identity flows,Contracts and pricing to verify,Design judgment
+Auth,Supabase Auth,Postgres oriented developer setup,Signed BAA/add-on for PHI,R13
